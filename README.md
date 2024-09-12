@@ -64,8 +64,6 @@ The repo follows GitHub flow which is a lightweight workflow. It was created by 
 
 ### If the repo is already cloned:
 
-1. Create branch in remote server (github/bitbucket/gitlab etc)
-
 1. Open the project
  
 1. Make sure you are on latest main branch and pull newly created remote branch
@@ -75,12 +73,15 @@ The repo follows GitHub flow which is a lightweight workflow. It was created by 
 1. Create local branch (feature/hotfix)
    * git checkout -b <feature/setup>
 
+1. Push the new branch to the remote
+   * git push -u origin <feature/setup>
+
 
 1. Update your code and commit changes to new branch
    * git add .
    * git commit -m "feature/setup initial version"
 
-1. Push feature branch to remote
+1. Push feature branch to remote after changes
    * git push origin feature/setup
 
 1. Create pull request, review and merge feature branch to main in remote server
